@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "firebase": "^9.22.2"
+    "@angular-devkit/build-angular": "^16.1.1",
+    "@angular/core": "^16.1.2",
+    "firebase": "^9.22.2",
+    "update": "^0.7.4"
   }
 }
