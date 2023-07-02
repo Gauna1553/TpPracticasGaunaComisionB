@@ -1,6 +1,7 @@
 <div>
+    <app-total mensaje="Total por pagar: " total=5000></app-total>
     <app-item 
     *ngFor="let item of items"
-    [item]="item"> (deteleItem)="deleteItem($event)"
+    [item]="item" (deteleItem)="deleteItem($event)">
 </app-item>
 </div>

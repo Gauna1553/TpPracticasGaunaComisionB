@@ -10,6 +10,7 @@ export class ItemsComponent {
 
 
   items: Item[] = [];
+  total:number = 0;
 
   ngOnInit(): void {
     this.items = [
@@ -39,6 +40,12 @@ export class ItemsComponent {
 
 deleteItem(item: Item) {
   this.items = this.items.filter(x => x.id != item.id);
+}
+
+getTotal() {
+  this.total = this.items.filter(item => !item.completed)
+                          .map(item => item.quantity * item.price)
+                          .reduce((acc, item) => acc += item, 0);
 }
 
 }

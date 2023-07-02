@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TotalComponent {
 
+
+  @Input() total:number = 0;
+  @Input() mensaje:string = "";
 }
