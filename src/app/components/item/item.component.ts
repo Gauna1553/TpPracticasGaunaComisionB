@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
+import { Item } from '../../models/item';
 
 @Component({
   selector: 'app-item',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent {
+
+  @Input() item: Item = new Item();
+  @Output() deleteItem: EventEmitter<Item> = new EventEmitter;
+
+
+  onDelete (item:Item) {
+    this.deleteItem.emit(item);
+  }
 
 }
