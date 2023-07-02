@@ -9,10 +9,11 @@ exports.__esModule = true;
 exports.AppRoutingModule = void 0;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var item_component_1 = require("./components/item/item.component");
+var items_component_1 = require("./components/items/items.component");
+var add_item_component_1 = require("./components/add-item/add-item.component");
 var routes = [
-    { path: "", component: item_component_1.ItemComponent },
-    { path: "/add", component: AddComponent }
+    { path: "", component: items_component_1.ItemsComponent },
+    { path: "add", component: add_item_component_1.AddItemComponent }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
