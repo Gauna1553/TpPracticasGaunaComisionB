@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AddItemComponent {
 
+  title:string="";
+  price:number =0;
+  quantity:number=0;
 }
